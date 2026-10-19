@@ -137,7 +137,7 @@ button:hover{transform:translateY(-3px);box-shadow:0 8px 20px #7e61ac35}
 </div>
 
 <script>
-const SHEETS_WEB_APP_URL = 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE';
+const SHEETS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx-c9JL4tjpPL3IC2a2-fQWmarO0k7msQR-qPsn9K2PQNAgaOGJ1D4ZTQI-IuBaNQ0B/exec';
 const ROSE_WIDTH = 800;
 const ROSE_DURATION = 10000;
 const ROSE_TICK = 16;
@@ -508,7 +508,7 @@ function reject(){
 }
 
 function recordChoice(choice){
-  if (SHEETS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbz0Efr-EWq8H7kBdIK8TOIUhNaFuxHhTvCAnjXkY9m_oRgfIcVILanf8ZkoMiM-QJ0pVQ/exec') return;
+  if (SHEETS_WEB_APP_URL === 'PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE') return;
 
   const payload = JSON.stringify({ choice, timestamp: new Date().toISOString() });
   if (navigator.sendBeacon) {
